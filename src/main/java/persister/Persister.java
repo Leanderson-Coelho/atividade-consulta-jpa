@@ -22,8 +22,8 @@ public class Persister {
 	public Persister() {}
 	
 	public void initPersistence(EntityManager em) {
-		Aluno aluno1 = new Aluno("João", "12345", 22, new Endereco("Rua1", "Bairro1", "Cidade1", "12345-121"), LocalDate.of(1997, 1, 10), "199712001012", LocalDate.of(1997, 1, 10), "ADS");
-		Aluno aluno2 = new Aluno("Maria", "12346", 22, new Endereco("Rua2", "Bairro2", "Cidade2", "12345-122"), LocalDate.of(1997, 1, 10), "199712001013", LocalDate.of(1997, 1, 10), "ADS");
+		Aluno aluno1 = new Aluno("João", "12345", 22, new Endereco("Rua1", "Bairro1", "Cidade1", "12345-121"), LocalDate.of(1997, 1, 10), "199712001012", LocalDate.of(1997, 1, 10), "2019.1");
+		Aluno aluno2 = new Aluno("Maria", "12346", 22, new Endereco("Rua2", "Bairro2", "Cidade2", "12345-122"), LocalDate.of(1997, 1, 10), "199712001013", LocalDate.of(1997, 1, 10), "2019.1");
 		Aluno aluno3 = new Aluno("Zé", "12347", 22, new Endereco("Rua3", "Bairro3", "Cidade3", "12345-123"), LocalDate.of(1997, 1, 10), "199712001014", LocalDate.of(1997, 1, 10), "ADS");
 		Aluno aluno4 = new Aluno("Juzé", "12348", 22, new Endereco("Rua4", "Bairro4", "Cidade4", "12345-124"), LocalDate.of(1997, 1, 10), "199712001015", LocalDate.of(1997, 1, 10), "ADS");
 		Aluno aluno5 = new Aluno("Juão", "12349", 22, new Endereco("Rua5", "Bairro5", "Cidade5", "12345-125"), LocalDate.of(1997, 1, 10), "199712001016", LocalDate.of(1997, 1, 10), "ADS");
@@ -67,12 +67,28 @@ public class Persister {
 		livro1.setAutor(autor2);
 		
 		
+		List<Telefone> telefones1 = new ArrayList<>();
+                telefones1.add(new Telefone("(83) 99951-5113", TelefoneType.RESIDENCIAL));
+                telefones1.add(new Telefone("(83) 99951-5113", TelefoneType.COMERCIAL));
+		List<Telefone> telefones2 = new ArrayList<>();
+                telefones2.add(new Telefone("(83) 99951-5113", TelefoneType.RESIDENCIAL));
+                telefones2.add(new Telefone("(83) 99951-5113", TelefoneType.COMERCIAL));
+		List<Telefone> telefones3 = new ArrayList<>();
+                telefones3.add(new Telefone("(83) 99951-5113", TelefoneType.RESIDENCIAL));
+                telefones3.add(new Telefone("(83) 99951-5113", TelefoneType.COMERCIAL));
+		List<Telefone> telefones4 = new ArrayList<>();
+                telefones4.add(new Telefone("(83) 99951-5113", TelefoneType.RESIDENCIAL));
+                telefones4.add(new Telefone("(83) 99951-5113", TelefoneType.COMERCIAL));
 		
-		Professor professor1 = new Professor("Semnome", "23456", 22, new Endereco(), LocalDate.of(1997, 1, 29), 6000f, new Telefone("(83) 99951-5112", TelefoneType.RESIDENCIAL));
-		Professor professor2 = new Professor("Testerson", "23457", 22, new Endereco(), LocalDate.of(1997, 1, 29), 3000f, new Telefone("(83) 99951-5113", TelefoneType.RESIDENCIAL));
-		Professor professor3 = new Professor("Agadoisó", "23458", 22, new Endereco(), LocalDate.of(1997, 1, 29), 12000f, new Telefone("(83) 99951-5114", TelefoneType.RESIDENCIAL));
-		Professor professor4 = new Professor("Janeiro de Noventaesete", "23459", 22, new Endereco(), LocalDate.of(1997, 1, 29), 10000f, new Telefone("(83) 99951-5512", TelefoneType.RESIDENCIAL));
-		Professor professor5 = new Professor("Comnome", "23450", 22, new Endereco(), LocalDate.of(1997, 1, 29), 5000f, new Telefone("(83) 99651-5111", TelefoneType.RESIDENCIAL));
+                
+                
+                
+                
+                Professor professor1 = new Professor("Semnome", "23456", 22, new Endereco("Que atividade fácil", "Bairro", "Nárnia", "12345-123"), LocalDate.of(1997, 1, 29), 6000f, telefones1);
+		Professor professor2 = new Professor("Testerson", "23457", 22, new Endereco("Que atividade fácil", "Bairro", "Nárnia", "12345-123"), LocalDate.of(1997, 1, 29), 3000f, telefones2);
+		Professor professor3 = new Professor("Agadoisó", "23458", 22, new Endereco("Que atividade fácil", "Bairro", "Nárnia", "12345-123"), LocalDate.of(1997, 1, 29), 12000f, telefones3);
+		Professor professor4 = new Professor("Janeiro de Noventaesete", "23459", 22, new Endereco("Que atividade fácil", "Bairro", "Nárnia", "12345-123"), LocalDate.of(1997, 1, 29), 10000f, telefones4);
+		Professor professor5 = new Professor("Comnome", "23450", 22, new Endereco("Que atividade fácil", "Bairro", "Nárnia", "12345-123"), LocalDate.of(1997, 1, 29), 5000f);
 		
 		
 		em.persist(aluno1);

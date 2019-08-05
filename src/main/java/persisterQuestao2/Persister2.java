@@ -40,11 +40,11 @@ public class Persister2 {
         Area area4 = new Area(4,"Financias",publicacao);
         Area area5 = new Area(5,"Ciencias",publicacao);
         
-        Publicacao publicacao1 = new Publicacao(1,"asdd",area,revisor1,escritor1);
+        Publicacao publicacao1 = new Publicacao(1,"Sondagem Industrial",area,revisor1,escritor1);
         Publicacao publicacao2 = new Publicacao(2,"Java beans",area,revisor2,escritor2);
-        Publicacao publicacao3 = new Publicacao(3,"fdgdssdf",area,revisor3,escritor3);
-        Publicacao publicacao4 = new Publicacao(4,"dfgdfsgfd",area,revisor4,escritor4);
-        Publicacao publicacao5 = new Publicacao(5,"asdadsd",area,revisor5,escritor5);
+        Publicacao publicacao3 = new Publicacao(3,"O agronegócio da soja nos contextos mundial e brasileiro",area,revisor3,escritor3);
+        Publicacao publicacao4 = new Publicacao(4,"A sub-reação a recompras de ações no mercado aberto",area,revisor4,escritor4);
+        Publicacao publicacao5 = new Publicacao(5,"Projeto de Ciência para o Brasil",area,revisor5,escritor5);
         
         publicacoes.add(publicacao1);
         escritor1.setPublicacoes(publicacoes);
