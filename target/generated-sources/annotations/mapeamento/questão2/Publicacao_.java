@@ -8,7 +8,7 @@ import mapeamento.questão2.Area;
 import mapeamento.questão2.Escritor;
 import mapeamento.questão2.Revisor;
 
-@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2019-08-01T16:22:18")
+@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2019-08-05T17:55:55")
 @StaticMetamodel(Publicacao.class)
 public class Publicacao_ { 
 

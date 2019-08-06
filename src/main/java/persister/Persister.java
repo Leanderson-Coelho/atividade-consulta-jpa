@@ -31,7 +31,7 @@ public class Persister {
 		Livro livro1 = new Livro("Un livru legual", "19741", LocalDate.of(1997, 1, 13));
 		Livro livro2 = new Livro("Mangá em portugues", "19742", LocalDate.of(1997, 1, 11));
 		Livro livro3 = new Livro("Ágnam em japonês", "19743", LocalDate.of(1997, 1, 1));
-		Livro livro4 = new Livro(":)", "19744", LocalDate.of(1997, 1, 1));
+		Livro livro4 = new Livro(":)", "19744", LocalDate.of(2019, 4, 20));
 		Livro livro5 = new Livro(":(", "19745", LocalDate.of(1997, 1, 6));
 		
 		List<Livro> livros1 = new ArrayList<>();
@@ -40,7 +40,7 @@ public class Persister {
 		livros1.addAll(Arrays.asList(livro2, livro3));
 		livros2.addAll(Arrays.asList(livro4, livro5));
 		
-		Autor autor1 = new Autor("José das Couves Pinto", "12315", 22, new Endereco("Rua1", "Bairro1", "Cidade1", "12345-121"), LocalDate.of(1997, 1, 10), "SeiLá");
+		Autor autor1 = new Autor("José das Couves Pinto", "12315", 22, new Endereco("Rua1", "Bairro1", "Cajazeiras", "12345-121"), LocalDate.of(1997, 1, 10), "SeiLá");
 		Autor autor2 = new Autor("Francisco Tripa", "12325", 22, new Endereco("Rua1", "Bairro1", "Cidade1", "12345-121"), LocalDate.of(1997, 1, 10), "ComoAssim?");
 		Autor autor3 = new Autor("Jose Esoj", "12335", 22, new Endereco("Rua1", "Bairro1", "Cidade1", "12345-121"), LocalDate.of(1997, 1, 10), "SeiLá");
 		Autor autor4 = new Autor("Maria Airam", "12355", 22, new Endereco("Rua1", "Bairro1", "Cidade1", "12345-121"), LocalDate.of(1997, 1, 10), "ComoAssim?");
@@ -78,13 +78,13 @@ public class Persister {
                 telefones3.add(new Telefone("(83) 99951-5113", TelefoneType.COMERCIAL));
 		List<Telefone> telefones4 = new ArrayList<>();
                 telefones4.add(new Telefone("(83) 99951-5113", TelefoneType.RESIDENCIAL));
-                telefones4.add(new Telefone("(83) 99951-5113", TelefoneType.COMERCIAL));
+                telefones4.add(new Telefone("(83) 99951-5118", TelefoneType.COMERCIAL));
 		
                 
                 
                 
                 
-                Professor professor1 = new Professor("Semnome", "23456", 22, new Endereco("Que atividade fácil", "Bairro", "Nárnia", "12345-123"), LocalDate.of(1997, 1, 29), 6000f, telefones1);
+		Professor professor1 = new Professor("Semnome", "23456", 22, new Endereco("Que atividade fácil", "Bairro", "Nárnia", "12345-123"), LocalDate.of(1997, 1, 29), 6000f, telefones1);
 		Professor professor2 = new Professor("Testerson", "23457", 22, new Endereco("Que atividade fácil", "Bairro", "Nárnia", "12345-123"), LocalDate.of(1997, 1, 29), 3000f, telefones2);
 		Professor professor3 = new Professor("Agadoisó", "23458", 22, new Endereco("Que atividade fácil", "Bairro", "Nárnia", "12345-123"), LocalDate.of(1997, 1, 29), 12000f, telefones3);
 		Professor professor4 = new Professor("Janeiro de Noventaesete", "23459", 22, new Endereco("Que atividade fácil", "Bairro", "Nárnia", "12345-123"), LocalDate.of(1997, 1, 29), 10000f, telefones4);
