@@ -32,7 +32,7 @@ public class ConsultasJPQL {
 //		alunosDaTurma2019_1(em);
 //		professorQueTemTelefoneQueTerminaEm(em);
 //		livrosDosAutoresDeCajazeirasComLancamentoEntre(em);
-		livrosDosAutoresQueComecamComALetra(em);
+//		livrosDosAutoresQueComecamComALetra(em);
 	}
 
 	private void livrosDosAutoresQueNaoNasceramNoDia(EntityManager em) {
