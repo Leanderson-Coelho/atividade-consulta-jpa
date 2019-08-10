@@ -9,13 +9,14 @@ import javax.persistence.PersistenceContext;
 @Singleton
 @Startup
 public class App2 {
-    
+
     @PersistenceContext
     EntityManager em;
     Persister2 persister = new Persister2();
     @PostConstruct
     private void init(){
     	persister.initPersistence(em);
+
     }
-    
+
 }

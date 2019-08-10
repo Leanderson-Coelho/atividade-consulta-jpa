@@ -18,7 +18,7 @@ public class App {
     Persister persister = new Persister();
     @PostConstruct
     private void init(){
-    	persister.initPersistence(em);
+//        persister.initPersistence(em);
     }
 
 

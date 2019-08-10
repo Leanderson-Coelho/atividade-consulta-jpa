@@ -41,10 +41,10 @@ public class Persister {
 		livros2.addAll(Arrays.asList(livro4, livro5));
 		
 		Autor autor1 = new Autor("José das Couves Pinto", "12315", 22, new Endereco("Rua1", "Bairro1", "Cajazeiras", "12345-121"), LocalDate.of(1997, 1, 10), "SeiLá");
-		Autor autor2 = new Autor("Francisco Tripa", "12325", 22, new Endereco("Rua1", "Bairro1", "Cidade1", "12345-121"), LocalDate.of(1997, 1, 10), "ComoAssim?");
-		Autor autor3 = new Autor("Jose Esoj", "12335", 22, new Endereco("Rua1", "Bairro1", "Cidade1", "12345-121"), LocalDate.of(1997, 1, 10), "SeiLá");
-		Autor autor4 = new Autor("Maria Airam", "12355", 22, new Endereco("Rua1", "Bairro1", "Cidade1", "12345-121"), LocalDate.of(1997, 1, 10), "ComoAssim?");
-		Autor autor5 = new Autor("João Oãoj", "12365", 22, new Endereco("Rua1", "Bairro1", "Cidade1", "12345-121"), LocalDate.of(1997, 1, 10), "Sei Lá... 3?");
+		Autor autor2 = new Autor("Francisco Tripa", "12325", 22, new Endereco("Rua1", "Bairro1", "Cajazeiras", "12345-121"), LocalDate.of(1997, 1, 10), "ComoAssim?");
+		Autor autor3 = new Autor("Jose Esoj", "12335", 22, new Endereco("Rua1", "Bairro1", "Cajazeiras", "12345-121"), LocalDate.of(1997, 1, 10), "SeiLá");
+		Autor autor4 = new Autor("Maria Airam", "12355", 22, new Endereco("Rua1", "Bairro1", "Cajazeiras", "12345-121"), LocalDate.of(1997, 1, 10), "ComoAssim?");
+		Autor autor5 = new Autor("João Oãoj", "12365", 22, new Endereco("Rua1", "Bairro1", "Cajazeiras", "12345-121"), LocalDate.of(1997, 1, 10), "Sei Lá... 3?");
 		
 		autor3.setLivros(livros1);
 		autor4.setLivros(livros1);

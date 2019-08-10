@@ -1,11 +1,9 @@
-package consultas;
+package consultasModelo1;
 
 import mapeamento.AlunoVO;
 import mapeamento.Livro;
 import mapeamento.Professor;
-import mapeamento.Telefone;
 
-import java.lang.reflect.Type;
 import java.time.LocalDate;
 import java.util.List;
 
